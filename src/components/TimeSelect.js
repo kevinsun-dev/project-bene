@@ -48,9 +48,7 @@ function TimeSelect() {
         <div class="ms-Grid" dir="ltr">
           <div class="ms-Grid-row">
             <div class="ms-Grid-col ms-sm3">
-              <DocumentCard
-                onClickHref="/getstarted"
-              >
+              <DocumentCard onClickHref="/getstarted">
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={coffeeBreakIcon} />
                 <DocumentCardDetails>
                   <DocumentCardTitle title="Coffee Break" shouldTruncate />
@@ -59,9 +57,7 @@ function TimeSelect() {
               </DocumentCard>
             </div>
             <div class="ms-Grid-col ms-sm3">
-              <DocumentCard
-                onClickHref="/getstarted"
-              >
+              <DocumentCard onClickHref="/getstarted">
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={spareTimeIcon} />
                 <DocumentCardDetails>
                   <DocumentCardTitle title="Spare Time" shouldTruncate />
@@ -70,9 +66,7 @@ function TimeSelect() {
               </DocumentCard>
             </div>
             <div class="ms-Grid-col ms-sm3">
-              <DocumentCard
-                onClickHref="/getstarted"
-              >
+              <DocumentCard onClickHref="/getstarted">
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={freeHourIcon} />
                 <DocumentCardDetails>
                   <DocumentCardTitle title="Free Time" shouldTruncate />
@@ -81,9 +75,7 @@ function TimeSelect() {
               </DocumentCard>
             </div>
             <div class="ms-Grid-col ms-sm3">
-              <DocumentCard
-                onClickHref="/getstarted"
-              >
+              <DocumentCard onClickHref="/getstarted">
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={dayOffIcon} />
                 <DocumentCardDetails>
                   <DocumentCardTitle title="Day Off" shouldTruncate />
