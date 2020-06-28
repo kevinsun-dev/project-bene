@@ -1,16 +1,25 @@
 import React, { Component } from 'react';
-
-function typeformFunc () { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } }
+import * as typeformEmbed from '@typeform/embed';
 
 class GetStarted extends Component {
-
-    render(){
+    constructor(props) {
+        super(props);
+        this.el = null;
+      }
+      componentDidMount() {
+        if (this.el) {
+          typeformEmbed.makeWidget(this.el, "https://lurachel18.typeform.com/to/eyDbQByc", {
+            hideFooter: true,
+            hideHeaders: true,
+            opacity: 0
+          });
+        }
+      }
+      render() {
         return (
-            <div>
-            <div className="typeform-widget" dataUrl="https://form.typeform.com/to/eyDbQByc" dataTransparency="100" dataHideHeaders="true" dataHideFooter="true"></div> 
-            </div>
+          <div ref={(el) => this.el = el} style={{width: '100%', height: '300px'}} />
         )
-    }
+      }
 }
 
 export default GetStarted;
