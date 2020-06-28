@@ -1,8 +1,9 @@
 import time
 from flask import Flask, request, render_template
-
+from flask_pymongo import PyMongo
 app = Flask(__name__)
-
+app.config["MONGO_URI"] = "mongodb://localhost:27017/bene"
+mongo = PyMongo(app)
 
 @app.route('/',methods=['GET', 'POST'])
 def index():
@@ -20,7 +21,13 @@ def form():
     skills = answers[1]["choices"].get("labels")
     userinfo = {"interests": interests, "skills": skills}
     print(userinfo)
+    mongo.db.formDetails.insert_one(userinfo)
     return userinfo
+
+@app.route('/dosomething')
+def recs():
+    details = mongo.db.formDetails.find().sort([('timestamp', -1)]).limit(1)
+    return {"details": details}
 
 if __name__ == '__main__':
     app.run(use_reloader=True)
