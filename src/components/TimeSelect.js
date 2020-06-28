@@ -45,9 +45,9 @@ function TimeSelect() {
     <div className="App">
       <header className="App-body">
         <img src={logo} className="App-logo" alt="logo" />
-        <div class="ms-Grid" dir="ltr">
-          <div class="ms-Grid-row">
-            <div class="ms-Grid-col ms-sm3">
+        <div className="ms-Grid" dir="ltr">
+          <div className="ms-Grid-row">
+            <div className="ms-Grid-col ms-sm3">
               <DocumentCard onClickHref="/getstarted">
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={coffeeBreakIcon} />
                 <DocumentCardDetails>
@@ -65,7 +65,7 @@ function TimeSelect() {
                 </DocumentCardDetails>
               </DocumentCard>
             </div>
-            <div class="ms-Grid-col ms-sm3">
+            <div className="ms-Grid-col ms-sm3">
               <DocumentCard onClickHref="/getstarted">
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={freeHourIcon} />
                 <DocumentCardDetails>
@@ -74,7 +74,7 @@ function TimeSelect() {
                 </DocumentCardDetails>
               </DocumentCard>
             </div>
-            <div class="ms-Grid-col ms-sm3">
+            <div className="ms-Grid-col ms-sm3">
               <DocumentCard onClickHref="/getstarted">
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={dayOffIcon} />
                 <DocumentCardDetails>

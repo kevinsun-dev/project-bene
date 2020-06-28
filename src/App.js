@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import TimeSelect from './components/TimeSelect';
 import GetStarted from './components/GetStarted';
+import DoSomething from './components/DoSomething';
 import 'office-ui-fabric-react/dist/css/fabric.css';
 import { initializeIcons } from '@uifabric/icons';
 
@@ -22,7 +23,7 @@ function App() {
             <GetStarted />
           </Route>
           <Route path="/dosomething">
-            
+            <DoSomething />
           </Route>
           <Route path="/">
             <TimeSelect />
