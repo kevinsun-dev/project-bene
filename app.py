@@ -1,9 +1,10 @@
 import time
-from flask import Flask
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/',methods=['GET', 'POST'])
+def index():
     return "Hello!"
     
 @app.route('/time')
