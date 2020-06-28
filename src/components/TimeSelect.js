@@ -43,7 +43,7 @@ function TimeSelect() {
   };
 
   const Clicked = (time): void => {
-    document.cookie = "time=" + time +"; path=/DoSomething";
+    document.cookie = "time=" + time +"; path=/dosomething";
     window.location = "/getstarted";
   };
 
