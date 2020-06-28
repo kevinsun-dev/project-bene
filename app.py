@@ -5,8 +5,12 @@ app = Flask(__name__)
 
 @app.route('/',methods=['GET', 'POST'])
 def index():
-    return "Hello!"
+    return "Hello there!"
     
 @app.route('/time')
 def get_current_time():
     return {'time': time.time()}
+
+@app.route('/form',methods=['POST'])
+def index():
+    return request
