@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from './bene-logo-extended.png';
+import logo from './../bene-logo-extended.png';
 import './TimeSelect.css';
 import {
   DocumentCard,
@@ -10,10 +10,7 @@ import {
 } from 'office-ui-fabric-react/lib/DocumentCard';
 import { IIconProps } from 'office-ui-fabric-react/lib/Icon';
 import { ImageFit } from 'office-ui-fabric-react/lib/Image';
-import 'office-ui-fabric-react/dist/css/fabric.css';
-import { initializeIcons } from '@uifabric/icons';
 
-initializeIcons();
 
 function TimeSelect() {
   const [currentTime, setCurrentTime] = useState(0);
@@ -46,7 +43,7 @@ function TimeSelect() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-body">
         <img src={logo} className="App-logo" alt="logo" />
         <div class="ms-Grid" dir="ltr">
           <div class="ms-Grid-row">

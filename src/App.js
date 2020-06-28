@@ -5,8 +5,12 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import TimeSelect from './TimeSelect';
+import TimeSelect from './components/TimeSelect';
 import GetStarted from './components/GetStarted';
+import 'office-ui-fabric-react/dist/css/fabric.css';
+import { initializeIcons } from '@uifabric/icons';
+
+initializeIcons();
 
 function App() {
   return (
@@ -15,7 +19,7 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/getstarted">
-            
+            <GetStarted />
           </Route>
           <Route path="/dosomething">
             

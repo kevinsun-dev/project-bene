@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-color: #f7b42c;
+  background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+  background-size: 200% 200%;
+  -webkit-animation: home-gradient-background 20s ease infinite;
+  animation: home-gradient-background 20s ease infinite;
 }
 
 .App-logo {
@@ -8,12 +13,7 @@
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #f7b42c;
-  background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
-  background-size: 200% 200%;
-  -webkit-animation: home-gradient-background 20s ease infinite;
-  animation: home-gradient-background 20s ease infinite;
+.App-body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
