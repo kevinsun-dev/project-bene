@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import TimeSelect from './TimeSelect';
+import GetStarted from './components/GetStarted';
 
 function App() {
   return (
