@@ -52,7 +52,7 @@ function TimeSelect() {
           <div class="ms-Grid-row">
             <div class="ms-Grid-col ms-sm3">
               <DocumentCard
-                onClickHref="http://bing.com"
+                onClickHref="/getstarted"
               >
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={coffeeBreakIcon} />
                 <DocumentCardDetails>
@@ -63,7 +63,7 @@ function TimeSelect() {
             </div>
             <div class="ms-Grid-col ms-sm3">
               <DocumentCard
-                onClickHref="http://bing.com"
+                onClickHref="/getstarted"
               >
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={spareTimeIcon} />
                 <DocumentCardDetails>
@@ -74,7 +74,7 @@ function TimeSelect() {
             </div>
             <div class="ms-Grid-col ms-sm3">
               <DocumentCard
-                onClickHref="http://bing.com"
+                onClickHref="/getstarted"
               >
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={freeHourIcon} />
                 <DocumentCardDetails>
@@ -85,7 +85,7 @@ function TimeSelect() {
             </div>
             <div class="ms-Grid-col ms-sm3">
               <DocumentCard
-                onClickHref="http://bing.com"
+                onClickHref="/getstarted"
               >
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={dayOffIcon} />
                 <DocumentCardDetails>
