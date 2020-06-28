@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,9 +11,18 @@ import DoSomething from './components/DoSomething';
 import 'office-ui-fabric-react/dist/css/fabric.css';
 import { initializeIcons } from '@uifabric/icons';
 
+
 initializeIcons();
 
 function App() {
+  const [matches, setMatches] = useState(0);
+  useEffect(() => {
+    fetch('/dosomething').then(res => res.json()).then(data => {
+      console.log(data)
+      setMatches(data);
+    });
+  }, []);
+
   return (
     <Router>
         {/* A <Switch> looks through its children <Route>s and
@@ -23,6 +32,7 @@ function App() {
             <GetStarted />
           </Route>
           <Route path="/dosomething">
+            <p>The current info is {JSON.stringify(matches)}.</p>
             <DoSomething />
           </Route>
           <Route path="/">
