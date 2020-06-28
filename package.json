@@ -10,6 +10,7 @@
     "@uifabric/example-data": "^7.0.17",
     "@uifabric/fluent-theme": "^7.1.100",
     "@uifabric/react-cards": "^0.109.104",
+    "js-cookie": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",

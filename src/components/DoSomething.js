@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Cookies from 'js-cookie';
 import './DoSomething.css';
 import logo from './../bene-logo-extended.png';
 import './TimeSelect.css';
@@ -100,21 +101,40 @@ const backgroundImageCardSectionTokens: ICardSectionTokens = { padding: 12 };
 const agendaCardSectionTokens: ICardSectionTokens = { childrenGap: 0 };
 const attendantsCardSectionTokens: ICardSectionTokens = { childrenGap: 6 };
 
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+}
+var time = getCookie("time");
 class DoSomething extends Component {
     constructor(props){
         super(props);
         this.state = {
-            events : events
+            events : events,
         };
     }
     render() {
         const {events} = this.state;
         var index = 0;
-        if (events.length > 3){
-            for (index = 0; index < events.length; index++) {
+        var eventsFiltered = events.filter(function(item) {
+            return item.EventDuration <= time;
+        });
+        if (eventsFiltered.length > 3){
+            for (index = 0; index < eventsFiltered.length; index++) {
                 if (index == 2) {
-                    var remaining = events.length - (index + 1)
-                    events.splice(index + 1, remaining);
+                    var remaining = eventsFiltered.length - (index + 1)
+                    eventsFiltered.splice(index + 1, remaining);
                 }
             }
         }
@@ -126,7 +146,7 @@ class DoSomething extends Component {
             <div className="ms-Grid" dir="ltr">
             <div className="ms-Grid-row" dir="ltr">
                 {
-                    events.map((event, i) => ( //TODO: move outside
+                    eventsFiltered.map((event, i) => ( //TODO: move outside
                         <div className="ms-Grid-col" key={i}>
                         <Card
                         aria-label="Clickable vertical card with image bleeding at the top of the card"
@@ -135,6 +155,7 @@ class DoSomething extends Component {
                         style={{ boxShadow: Depths.depth16 }}
                         key ={i}
                         onClick={() => {window.open(event.Website) }}
+                        className = "card"
                         >
                         <Card.Section
                         fill
