@@ -15,10 +15,20 @@ import { initializeIcons } from '@uifabric/icons';
 initializeIcons();
 
 function App() {
-  const [matches, setMatches] = useState(0);
+  const [matches, setMatches] = useState({});
   useEffect(() => {
-    fetch('/dosomething').then(res => res.json()).then(data => {
-      console.log(data)
+    fetch('/dosomething',{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    }
+    ).then(res => {
+      console.log(res);
+      return res.json();
+    }
+    ).then(data => {
+      console.log('settting matches', data);
       setMatches(data);
     });
   }, []);
@@ -31,9 +41,8 @@ function App() {
           <Route path="/getstarted">
             <GetStarted />
           </Route>
-          <Route path="/dosomething">
-            <p>The current info is {JSON.stringify(matches)}.</p>
-            <DoSomething />
+          <Route path="/dosomething" render={() =>
+            <DoSomething formdata={matches}/>}>
           </Route>
           <Route path="/">
             <TimeSelect />

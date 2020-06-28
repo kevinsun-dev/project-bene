@@ -104,10 +104,16 @@ class DoSomething extends Component {
     constructor(props){
         super(props);
         this.state = {
-            events : events
+            events : events,
         };
     }
     render() {
+        console.log("props", this.props); // info about the user's form responses
+        /** EXAMPLE 
+         * {formdata:
+            details: "['Advocacy', 'Animals']"
+            skills: "['Programming']"}
+        */
         const {events} = this.state;
         var index = 0;
         if (events.length > 3){
