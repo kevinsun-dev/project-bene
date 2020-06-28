@@ -1,64 +1,62 @@
-{
-    "Events": [
-        {
-            "Organization": "Special Olympics Commitee",
-            "EventHeader": "Special Olympics, Make Cheer Signs From Home",
-            "EventBlurb": "Bring energy and excitement for the athletes by making cheer signs that volunteers will use to encourage the athletes during their competitions throughout the state. Have your team, family, or yourself be a part of the celebration by hosting a cheer sign making event! One person typically makes 1-2 signs in 30mins. This is a great opportunity for creative expression and casual group or individual engagement",
-            "EventDuration": 60,
-            "EventDate": null,
-            "Skills": ["Creativity"],
-            "Requirements": [],
-            "Website": "https://microsoft.sharepoint.com/sites/give/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fgive%2FShared%20Documents%2FYear%2DRound%20Special%20Olympics%20Cheer%20Signs%5FMicro%20Volunteering%20One%20Pager%2Epdf&parent=%2Fsites%2Fgive%2FShared%20Documents&p=true&originalPath=aHR0cHM6Ly9taWNyb3NvZnQuc2hhcmVwb2ludC5jb20vOmI6L3MvZ2l2ZS9FZnlrSVROSFh2cE5uYkw1bWhLendwOEJxdWc3Ykk2ZHZrYkNQM3duTUQ2OEJBP3J0aW1lPTVVMkNzdlVhMkVn",
-            "Picture": null,
-            "Categories": "Casual, Fun, Engaging, Arts"
-        },
-        {
-            "Organization": "EarthScope",
-            "EventHeader": "Classify Earthquake Sounds for Research",
-            "EventBlurb": "Listen for earthquakes by speeding up seismic waves to audible pitches.",
-            "EventDuration": 30,
-            "EventDate": null,
-            "Skills": ["Listening"],
-            "Requirements": [],
-            "Website": "https://www.zooniverse.org/projects/vivitang/earthquake-detective",
-            "Picture": "https://panoptes-uploads.zooniverse.org/production/project_background/c9b034fe-aaa7-49d7-8a2c-0b7dc5e3e439.jpeg",
-            "Categories": ["Science", "Research", "Data"]
-        },
-        {
-            "Organization": "George Mason University",
-            "EventHeader": "Read up on Activist Burnout",
-            "EventBlurb": "Educate yourself on activist burnout in racial justice activists of color at...",
-            "EventDuration": 15,
-            "EventDate": null,
-            "Skills": ["Reading"],
-            "Requirements": [],
-            "Website": "http://edchange.org/publications/RBF-activist-burnout-PWIs.pdf",
-            "Picture": "https://www.tandfonline.com/doi/cover-img/10.1080/cree20.v023.i04",
-            "Categories": ["Research", "Reading", "Data"]
-        },
-        {
-            "Organization": "Toaru Foundation",
-            "EventHeader": "Translate our Message",
-            "EventBlurb": "日本語は話せますか？",
-            "EventDuration": 15,
-            "EventDate": null,
-            "Skills": ["Japanese", "English"],
-            "Requirements": ["Japanese"],
-            "Website": "https://www.bilibili.com/",
-            "Picture": "https://www.smartcat.ai/blog/content/images/2019/12/how_to_translate-1.png",
-            "Categories": ["Translation", "Global", "Japan"]
-        },
-        {
-            "Organization": "Electronic Frontier Foundation",
-            "EventHeader": "Design a Flyer",
-            "EventBlurb": "Create a flyer for the upcoming protest at 1600 Pennsylvania Ave.",
-            "EventDuration": 60,
-            "EventDate": null,
-            "Skills": ["Design", "Marketing"],
-            "Requirements": ["Adobe Photoshop"],
-            "Website": "https://www.eff.org/",
-            "Picture": "https://www.eff.org/files/styles/feature/public/issues/covid-laptops-4.png",
-            "Categories": ["Technology", "Activism", "Image", "Marketing"]
-        }
-    ]
-}
+[
+    {
+        "Organization": "Special Olympics Commitee",
+        "EventHeader": "Special Olympics, Make Cheer Signs From Home",
+        "EventBlurb": "Bring energy and excitement for the athletes by making cheer signs that volunteers will use to encourage the athletes during their competitions throughout the state. Have your team, family, or yourself be a part of the celebration by hosting a cheer sign making event! One person typically makes 1-2 signs in 30mins. This is a great opportunity for creative expression and casual group or individual engagement",
+        "EventDuration": 60,
+        "EventDate": "Anytime",
+        "Skills": ["Creativity"],
+        "Requirements": [],
+        "Website": "https://microsoft.sharepoint.com/sites/give/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fgive%2FShared%20Documents%2FYear%2DRound%20Special%20Olympics%20Cheer%20Signs%5FMicro%20Volunteering%20One%20Pager%2Epdf&parent=%2Fsites%2Fgive%2FShared%20Documents&p=true&originalPath=aHR0cHM6Ly9taWNyb3NvZnQuc2hhcmVwb2ludC5jb20vOmI6L3MvZ2l2ZS9FZnlrSVROSFh2cE5uYkw1bWhLendwOEJxdWc3Ykk2ZHZrYkNQM3duTUQ2OEJBP3J0aW1lPTVVMkNzdlVhMkVn",
+        "Picture": "http://committoinclusion.org/wp-content/uploads/2015/02/SOI_Centered.jpg",
+        "Categories": ["Casual", "Fun", "Engaging", "Arts"]
+    },
+    {
+        "Organization": "EarthScope",
+        "EventHeader": "Classify Earthquake Sounds for Research",
+        "EventBlurb": "Listen for earthquakes by speeding up seismic waves to audible pitches.",
+        "EventDuration": 30,
+        "EventDate": "Anytime",
+        "Skills": ["Listening"],
+        "Requirements": [],
+        "Website": "https://www.zooniverse.org/projects/vivitang/earthquake-detective",
+        "Picture": "https://panoptes-uploads.zooniverse.org/production/project_background/c9b034fe-aaa7-49d7-8a2c-0b7dc5e3e439.jpeg",
+        "Categories": ["Science", "Research", "Data"]
+    },
+    {
+        "Organization": "George Mason University",
+        "EventHeader": "Read up on Activist Burnout",
+        "EventBlurb": "Educate yourself on activist burnout in racial justice activists of color at...",
+        "EventDuration": 15,
+        "EventDate": "Anytime",
+        "Skills": ["Reading"],
+        "Requirements": [],
+        "Website": "http://edchange.org/publications/RBF-activist-burnout-PWIs.pdf",
+        "Picture": "https://www.tandfonline.com/doi/cover-img/10.1080/cree20.v023.i04",
+        "Categories": ["Research", "Reading", "Data"]
+    },
+    {
+        "Organization": "Toaru Foundation",
+        "EventHeader": "Translate our Message",
+        "EventBlurb": "日本語は話せますか？",
+        "EventDuration": 15,
+        "EventDate": "Anytime",
+        "Skills": ["Japanese", "English"],
+        "Requirements": ["Japanese"],
+        "Website": "https://www.bilibili.com/",
+        "Picture": "https://www.smartcat.ai/blog/content/images/2019/12/how_to_translate-1.png",
+        "Categories": ["Translation", "Global", "Japan"]
+    },
+    {
+        "Organization": "Electronic Frontier Foundation",
+        "EventHeader": "Design a Flyer",
+        "EventBlurb": "Create a flyer for the upcoming protest at 1600 Pennsylvania Ave.",
+        "EventDuration": 60,
+        "EventDate": "Anytime",
+        "Skills": ["Design", "Marketing"],
+        "Requirements": ["Adobe Photoshop"],
+        "Website": "https://www.eff.org/",
+        "Picture": "https://www.eff.org/files/styles/feature/public/issues/covid-laptops-4.png",
+        "Categories": ["Technology", "Activism", "Image", "Marketing"]
+    }
+]
