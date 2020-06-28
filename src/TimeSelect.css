@@ -3,19 +3,17 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
+  margin-bottom: 5vh;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
   background-color: #f7b42c;
-  background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+  background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+  background-size: 200% 200%;
+  -webkit-animation: home-gradient-background 20s ease infinite;
+  animation: home-gradient-background 20s ease infinite;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,11 +27,13 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@-webkit-keyframes home-gradient-background {
+  0%{background-position:97% 0%}
+  50%{background-position:4% 100%}
+  100%{background-position:97% 0%}
+}
+@keyframes home-gradient-background {
+  0%{background-position:97% 0%}
+  50%{background-position:4% 100%}
+  100%{background-position:97% 0%}
 }
