@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Cookies from 'js-cookie';
 import logo from './../bene-logo-extended.png';
 import './TimeSelect.css';
 import {
@@ -41,6 +42,11 @@ function TimeSelect() {
     styles: { root: { color: '#FC7B21', fontSize: '80px', width: '80px', height: '80px' } },
   };
 
+  const Clicked = (time): void => {
+    document.cookie = "time=" + time +"; path=/DoSomething";
+    window.location = "/getstarted";
+  };
+
   return (
     <div className="App">
       <header className="App-body">
@@ -48,7 +54,7 @@ function TimeSelect() {
         <div className="ms-Grid" dir="ltr">
           <div className="ms-Grid-row">
             <div className="ms-Grid-col ms-sm3">
-              <DocumentCard onClickHref="/getstarted">
+              <DocumentCard onClick={() => Clicked(15)}>
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={coffeeBreakIcon} />
                 <DocumentCardDetails>
                   <DocumentCardTitle title="Coffee Break" shouldTruncate />
@@ -57,7 +63,7 @@ function TimeSelect() {
               </DocumentCard>
             </div>
             <div class="ms-Grid-col ms-sm3">
-              <DocumentCard onClickHref="/getstarted">
+              <DocumentCard onClick={() => Clicked(30)}>
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={spareTimeIcon} />
                 <DocumentCardDetails>
                   <DocumentCardTitle title="Spare Time" shouldTruncate />
@@ -66,7 +72,7 @@ function TimeSelect() {
               </DocumentCard>
             </div>
             <div className="ms-Grid-col ms-sm3">
-              <DocumentCard onClickHref="/getstarted">
+              <DocumentCard onClick={() => Clicked(60)}>
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={freeHourIcon} />
                 <DocumentCardDetails>
                   <DocumentCardTitle title="Free Time" shouldTruncate />
@@ -75,7 +81,7 @@ function TimeSelect() {
               </DocumentCard>
             </div>
             <div className="ms-Grid-col ms-sm3">
-              <DocumentCard onClickHref="/getstarted">
+              <DocumentCard onClick={() => Clicked(960)} > 
                 <DocumentCardImage height={120} imageFit={ImageFit.cover} iconProps={dayOffIcon} />
                 <DocumentCardDetails>
                   <DocumentCardTitle title="Day Off" shouldTruncate />

@@ -20,6 +20,7 @@
   width: 286px;    
   height: 200px;
   overflow: hidden;
+  border-bottom: 1px solid black;
 }
 .square img {
   position: absolute;
@@ -49,4 +50,8 @@ hr {
 p {
   margin-bottom: 0px;
   margin-top: 0px
+}
+
+.card {
+  background-color: white;
 }
