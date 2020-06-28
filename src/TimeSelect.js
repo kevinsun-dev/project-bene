@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import logo from './bene-logo-extended.png';
 import './TimeSelect.css';
 import {
   DocumentCard,
@@ -8,7 +8,6 @@ import {
   DocumentCardStatus,
   DocumentCardImage
 } from 'office-ui-fabric-react/lib/DocumentCard';
-import { mergeStyles } from 'office-ui-fabric-react/lib/Styling';
 import { IIconProps } from 'office-ui-fabric-react/lib/Icon';
 import { ImageFit } from 'office-ui-fabric-react/lib/Image';
 import 'office-ui-fabric-react/dist/css/fabric.css';
